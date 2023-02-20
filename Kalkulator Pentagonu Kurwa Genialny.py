@@ -25,13 +25,16 @@ while True:
             print("Invalid input")
             continue
         if choice == '1':
-            print(num1, "+", num2, "=", add(num1, num2)
+            print(num1, "+", num2, "=", add(num1, num2))
         elif choice == '2':
-            print(num1, "-", num2, "=", subtract(num1, num2)
+            print(num1, "-", num2, "=", subtract(num1, num2))
         elif choice == '3':
-            print(num1, "*", num2, "=", multiply(num1, num2)
-        else:
-            print(num1, "/", num2, "=", divide(num1, num2))
+            print(num1, "*", num2, "=", multiply(num1, num2))
+        elif choice == '4':
+                if num1 == 0 or num2 == 0:
+                    print("ty debilu ty, nie da sie dzielic przez 0")
+                    continue
+                print(num1, "/", num2, "=", divide(num1, num2))
         
         next_calculation = input("Let's do next calculation? (yes/no): ")
         if next_calculation == "no":
